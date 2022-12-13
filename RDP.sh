@@ -23,7 +23,7 @@ sudo adduser ANI chrome-remote-desktop
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
-read -p "Paste Here: " CRP
+read -p "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AfgeXvvarOEEna9lBOgA3dNwQV9Xd9aoPC4zAwxJB-oaMAZ0mlEs8z7QU8LT34uajCO-bA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)" CRP
 su - ANI -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
